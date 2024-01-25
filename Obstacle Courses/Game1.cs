@@ -170,21 +170,29 @@ namespace Obstacle_Courses
 
             if (screen == Screen.Intro) 
             {
-                if (MouseState.LeftButton == ButtonState.Pressed && mouseLocation.Intersects(new Rectangle(275, 375, 410, 52))) { screen = Screen.Game; }
+                if (MouseState.LeftButton == ButtonState.Pressed && mouseLocation.Intersects(new Rectangle(275, 375, 410, 52)))
+                { 
+                    screen = Screen.Game; 
+                    
+                }
                 if (MouseState.LeftButton == ButtonState.Pressed && mouseLocation.Intersects(new Rectangle(10, 10, 235, 52))) { screen = Screen.HowToPlay; }
             }
+            else if (screen == Screen.Game)
+            {
+                if (yellowSplat1.Intersects(borders[2]) || yellowSplat1.Intersects(borders[6])) { speedYS1 *= -1; }
+                yellowSplat1.Y += speedYS1;
 
-            if (yellowSplat1.Intersects(borders[2]) || yellowSplat1.Intersects(borders[6])) { speedYS1 *= -1; }
-            yellowSplat1.Y += speedYS1;
+                if (yellowSplat2.Intersects(borders[0]) || yellowSplat2.Intersects(borders[6])) { speedYS2 *= -1; }
+                yellowSplat2.Y += speedYS2;
 
-            if (yellowSplat2.Intersects(borders[0]) || yellowSplat2.Intersects(borders[6])) { speedYS2 *= -1; }
-            yellowSplat2.Y += speedYS2;
-
-            if (yellowSplat3.Intersects(borders[0]) || yellowSplat3.Intersects(borders[6])) { speedYS3 *= -1; }
-            yellowSplat3.Y += speedYS3;
+                if (yellowSplat3.Intersects(borders[0]) || yellowSplat3.Intersects(borders[6])) { speedYS3 *= -1; }
+                yellowSplat3.Y += speedYS3;
 
 
-            player.Update(gameTime, borders, spikes, yellows, teleports, yellowSplat1, yellowSplat2, yellowSplat3);
+                player.Update(gameTime, borders, spikes, yellows, teleports, yellowSplat1, yellowSplat2, yellowSplat3);
+
+
+            }
 
             base.Update(gameTime);
         }
