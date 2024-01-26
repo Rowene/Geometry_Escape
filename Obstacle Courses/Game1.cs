@@ -172,7 +172,11 @@ namespace Obstacle_Courses
 
             if (screen == Screen.Intro) 
             {
-                if (MouseState.LeftButton == ButtonState.Pressed && mouseLocation.Intersects(new Rectangle(275, 375, 410, 52))) { screen = Screen.Game; }
+                if (MouseState.LeftButton == ButtonState.Pressed && mouseLocation.Intersects(new Rectangle(275, 375, 410, 52)))
+                { 
+                    screen = Screen.Game; 
+                    
+                }
                 if (MouseState.LeftButton == ButtonState.Pressed && mouseLocation.Intersects(new Rectangle(10, 10, 235, 52))) { screen = Screen.HowToPlay; }
             }
             else if (screen == Screen.Game)
@@ -186,13 +190,13 @@ namespace Obstacle_Courses
                 if (yellowSplat3.Intersects(borders[0]) || yellowSplat3.Intersects(borders[6])) { speedYS3 *= -1; }
                 yellowSplat3.Y += speedYS3;
 
-
                 screen = player.Update(gameTime, borders, spikes, yellows, teleports, yellowSplat1, yellowSplat2, yellowSplat3);
             }
             else if (screen == Screen.Won) 
             {
-                
-            
+
+                player.Update(gameTime, borders, spikes, yellows, teleports, yellowSplat1, yellowSplat2, yellowSplat3);
+
             }
 
             base.Update(gameTime);

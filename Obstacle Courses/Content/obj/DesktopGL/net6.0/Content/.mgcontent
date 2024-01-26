@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Profile>Reach</Profile>
+  <Platform>DesktopGL</Platform>
+  <Config />
+  <SourceFiles>
+    <File>X:/My Drive/ICS4U/Obstacle Courses/Obstacle Courses/Content/black.jpg</File>
+    <File>X:/My Drive/ICS4U/Obstacle Courses/Obstacle Courses/Content/blue.png</File>
+    <File>X:/My Drive/ICS4U/Obstacle Courses/Obstacle Courses/Content/clickhere.png</File>
+    <File>X:/My Drive/ICS4U/Obstacle Courses/Obstacle Courses/Content/CordsText.spritefont</File>
+    <File>X:/My Drive/ICS4U/Obstacle Courses/Obstacle Courses/Content/Flag.png</File>
+    <File>X:/My Drive/ICS4U/Obstacle Courses/Obstacle Courses/Content/GeometryEscape.png</File>
+    <File>X:/My Drive/ICS4U/Obstacle Courses/Obstacle Courses/Content/howtoplaybutton.png</File>
+    <File>X:/My Drive/ICS4U/Obstacle Courses/Obstacle Courses/Content/IntroArt.png</File>
+    <File>X:/My Drive/ICS4U/Obstacle Courses/Obstacle Courses/Content/player.png</File>
+    <File>X:/My Drive/ICS4U/Obstacle Courses/Obstacle Courses/Content/Triangle.webp</File>
+    <File>X:/My Drive/ICS4U/Obstacle Courses/Obstacle Courses/Content/Triangleflip.png</File>
+    <File>X:/My Drive/ICS4U/Obstacle Courses/Obstacle Courses/Content/yellow.jfif</File>
+    <File>X:/My Drive/ICS4U/Obstacle Courses/Obstacle Courses/Content/yellowsplat.png</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>
