@@ -7,10 +7,14 @@ using System.Linq;
 using System.Reflection.Emit;
 using System.Runtime.CompilerServices;
 
+
 namespace Obstacle_Courses
 {
     class Player
     {
+
+        //Game1 class1 = new Game1();
+
         Texture2D _texture;
 
         Rectangle _spawn = new Rectangle(210, 410, 12,12);
@@ -23,7 +27,6 @@ namespace Obstacle_Courses
 
         bool leftBorder = false;
         bool rightBorder = false;
-        bool wallJump = false;
         bool wallJumpL = false;
         bool wallJumpR = false;
 
@@ -40,7 +43,7 @@ namespace Obstacle_Courses
             hasJumped = false;
         }
 
-        public void Update(GameTime gt, List<Rectangle> walls, List<Rectangle> spikes, List<Rectangle> yellows, List<Rectangle> teleports, Rectangle yellowSplat1, Rectangle yellowSplat2, Rectangle yellowSplat3)
+        public Screen Update(GameTime gt, List<Rectangle> walls, List<Rectangle> spikes, List<Rectangle> yellows, List<Rectangle> teleports, Rectangle yellowSplat1, Rectangle yellowSplat2, Rectangle yellowSplat3)
         {
             _location.X += (int)_velocity.X;
             _location.Y += (int)_velocity.Y;
@@ -60,7 +63,6 @@ namespace Obstacle_Courses
                 hasJumped = true;
                 onWall = false;
                 wallJumpR = true;
-                wallJump = true;
             }
 
             if ((Keyboard.GetState().IsKeyDown(Keys.W) || Keyboard.GetState().IsKeyDown(Keys.Space)) && leftBorder && !wallJumpL)
@@ -71,7 +73,6 @@ namespace Obstacle_Courses
                 hasJumped = true;
                 onWall = false;
                 wallJumpL = true;
-                wallJump = true;
             }
 
             //basic controls
@@ -111,7 +112,7 @@ namespace Obstacle_Courses
                     else { _velocity.Y += 2; }
                 }
                 if (_playerBottom.Intersects(walls[i]))
-                { hasJumped = false; onGround = true; wallJump = false; wallJumpR = false; wallJumpL = false; }
+                { hasJumped = false; onGround = true; wallJumpR = false; wallJumpL = false; }
             }
 
             //border left & right
@@ -152,10 +153,14 @@ namespace Obstacle_Courses
                 if (_location.Intersects(teleports[i])) { _location.X = teleports[i + 1].X + teleports[i+1].Width/2; _location.Y = teleports[i+1].Y + teleports[i+1].Height/2; }
             }
 
+            //won
+            if (_location.Intersects(new Rectangle(640, 140, 25, 25)))
+            {
+                return Screen.Won;
+            }
 
 
-
-                    if (onWall & !onGround) { _velocity.Y = 1f; }
+            if (onWall & !onGround) { _velocity.Y = 1f; }
 
             if (!hasJumped) _velocity.Y = 0f;
 
@@ -166,6 +171,7 @@ namespace Obstacle_Courses
             }
 
             if (_velocity.Y > 5f) { _velocity.Y = 5f; }
+            return Screen.Game;
         }
 
         public void Draw(SpriteBatch spriteBatch)
