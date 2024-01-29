@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System.Collections.Generic;
@@ -14,7 +15,8 @@ namespace Obstacle_Courses
         public GraphicsDeviceManager _graphics;
         public SpriteBatch _spriteBatch;
 
-        
+        int tutorialFrame = 0;
+
         public Screen screen;
 
         Rectangle mouseLocation;
@@ -23,10 +25,11 @@ namespace Obstacle_Courses
         Texture2D ClickHereTexture;
         Texture2D IntroArt;
         Texture2D controlsButton;
+        Texture2D playAgainTexture;
 
-
-
-
+        SoundEffect dyingSound;
+        SoundEffect gameMusic;
+        SoundEffectInstance gameMusicInst;
 
         List<Rectangle> borders = new List<Rectangle>();
         List<Rectangle> spikes = new List<Rectangle>();
@@ -53,15 +56,13 @@ namespace Obstacle_Courses
 
         Texture2D flagTexture;
 
-        SpriteFont cordsText;
-
         Player player;
         Texture2D playerTexture;
 
-        //delete later
-        int yP;
-        int xP;
+        SpriteFont tutorialText;
+        SpriteFont wonText;
 
+        List<Texture2D> frameTextures = new List<Texture2D>();
 
         public Game1()
         {
@@ -130,7 +131,7 @@ namespace Obstacle_Courses
             teleports.Add(new Rectangle(185, 115, 5, 30));
 
             base.Initialize();
-            player = new Player(playerTexture, 210, 410);
+            player = new Player(playerTexture, 210, 410, dyingSound);
         }
 
         protected override void LoadContent()
@@ -140,6 +141,15 @@ namespace Obstacle_Courses
             ClickHereTexture = Content.Load<Texture2D>("clickhere");
             IntroArt = Content.Load<Texture2D>("IntroArt");
             controlsButton = Content.Load<Texture2D>("howtoplaybutton");
+
+            tutorialText = Content.Load<SpriteFont>("tutorialText");
+            wonText = Content.Load<SpriteFont>("winText");
+            playAgainTexture = Content.Load<Texture2D>("playAgain");
+
+            dyingSound = Content.Load<SoundEffect>("dyingSound");
+            gameMusic = Content.Load<SoundEffect>("gameMusic");
+
+            gameMusicInst = gameMusic.CreateInstance();
 
             playerTexture = Content.Load<Texture2D>("player");
             borderTexture = Content.Load<Texture2D>("black");
@@ -153,7 +163,10 @@ namespace Obstacle_Courses
 
             flagTexture = Content.Load<Texture2D>("Flag");
 
-            cordsText = Content.Load<SpriteFont>("CordsText");
+            for (int i = 0; i < 100; i++)
+            {
+                frameTextures.Add(Content.Load<Texture2D>("" + i));
+            }
         }
 
         protected override void Update(GameTime gameTime)
@@ -166,14 +179,13 @@ namespace Obstacle_Courses
             mouseLocation.X = MouseState.X;
             mouseLocation.Y = MouseState.Y;
 
-            //delete later
-            xP = MouseState.X;
-            yP = MouseState.Y;
-
             if (screen == Screen.Intro) 
             {
+                gameMusicInst.IsLooped = true;
+                gameMusicInst.Play();
+
                 if (MouseState.LeftButton == ButtonState.Pressed && mouseLocation.Intersects(new Rectangle(275, 375, 410, 52)))
-                { 
+                {
                     screen = Screen.Game; 
                     
                 }
@@ -192,11 +204,22 @@ namespace Obstacle_Courses
 
                 screen = player.Update(gameTime, borders, spikes, yellows, teleports, yellowSplat1, yellowSplat2, yellowSplat3);
             }
-            else if (screen == Screen.Won) 
+            else if (screen == Screen.Won)
             {
-
-                player.Update(gameTime, borders, spikes, yellows, teleports, yellowSplat1, yellowSplat2, yellowSplat3);
-
+                if (MouseState.LeftButton == ButtonState.Pressed && mouseLocation.Intersects(new Rectangle(250, 350, 410, 52)))
+                {
+                    screen = Screen.Game;
+                }     
+            }
+            else if (screen == Screen.HowToPlay)
+            {
+                tutorialFrame++;
+                if (tutorialFrame >= 100)
+                    tutorialFrame = 0;
+                if (MouseState.LeftButton == ButtonState.Pressed && !mouseLocation.Intersects(new Rectangle(10, 10, 235, 52)))
+                {
+                    screen = Screen.Intro;
+                }
             }
 
             base.Update(gameTime);
@@ -207,7 +230,6 @@ namespace Obstacle_Courses
             GraphicsDevice.Clear(Color.DimGray);
             _spriteBatch.Begin();
 
-            _spriteBatch.DrawString(cordsText, $"{xP} , {yP}", new System.Numerics.Vector2(0,0), Color.White);
             if (screen == Screen.Game)
             {
                 player.Draw(_spriteBatch);
@@ -232,17 +254,25 @@ namespace Obstacle_Courses
 
                 _spriteBatch.Draw(flagTexture, new Rectangle(640, 140, 25, 25),Color.White);
             }
-            else
+            else if (screen == Screen.Intro)
             {
                 _spriteBatch.Draw(controlsButton, new Rectangle(10,10, 235,52), Color.White);
                 _spriteBatch.Draw(GeometryIntroTexture, new Rectangle(200, 110 ,560, 93), Color.White);
                 _spriteBatch.Draw(ClickHereTexture, new Rectangle(275, 375, 410, 52), Color.White);
                 _spriteBatch.Draw(IntroArt, new Rectangle(250, 0, 460, 460), Color.White);
-
+            }
+            else if (screen == Screen.HowToPlay)
+            {
+                _spriteBatch.Draw(frameTextures[tutorialFrame], new Rectangle(0,0,960,540), Color.White);
+                _spriteBatch.DrawString(tutorialText, "Click Anywhere to go back." ,new Microsoft.Xna.Framework.Vector2(450, 250), Color.White);
+            }
+            else
+            {
+                _spriteBatch.Draw(playAgainTexture, new Rectangle(250, 350, 410, 52), Color.Black);
+                _spriteBatch.DrawString(wonText, "You Won! That's Very impressive.", new Microsoft.Xna.Framework.Vector2(175, 100), Color.White);
             }
 
-
-            _spriteBatch.End();
+                _spriteBatch.End();
             base.Draw(gameTime);
         }
     }

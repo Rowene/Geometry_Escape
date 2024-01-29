@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>X:/My Drive/ICS4U/Obstacle Courses/Obstacle Courses/Content/Triangleflip.png</SourceFile>
-  <SourceTime>2024-01-18T10:50:35.865-05:00</SourceTime>
-  <DestFile>X:/My Drive/ICS4U/Obstacle Courses/Obstacle Courses/Content/bin/DesktopGL/Content/Triangleflip.xnb</DestFile>
-  <DestTime>2024-01-18T10:56:19.937-05:00</DestTime>
+  <SourceFile>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/Triangleflip.png</SourceFile>
+  <SourceTime>2024-01-27T14:15:52.4317302-05:00</SourceTime>
+  <DestFile>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/bin/DesktopGL/Content/Triangleflip.xnb</DestFile>
+  <DestTime>2024-01-27T14:16:45.6516032-05:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-26T07:44:56-04:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

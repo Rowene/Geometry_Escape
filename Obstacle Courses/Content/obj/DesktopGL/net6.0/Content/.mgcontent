@@ -4,21 +4,231 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>X:/My Drive/ICS4U/Obstacle Courses/Obstacle Courses/Content/black.jpg</File>
-    <File>X:/My Drive/ICS4U/Obstacle Courses/Obstacle Courses/Content/blue.png</File>
-    <File>X:/My Drive/ICS4U/Obstacle Courses/Obstacle Courses/Content/clickhere.png</File>
-    <File>X:/My Drive/ICS4U/Obstacle Courses/Obstacle Courses/Content/CordsText.spritefont</File>
-    <File>X:/My Drive/ICS4U/Obstacle Courses/Obstacle Courses/Content/Flag.png</File>
-    <File>X:/My Drive/ICS4U/Obstacle Courses/Obstacle Courses/Content/GeometryEscape.png</File>
-    <File>X:/My Drive/ICS4U/Obstacle Courses/Obstacle Courses/Content/howtoplaybutton.png</File>
-    <File>X:/My Drive/ICS4U/Obstacle Courses/Obstacle Courses/Content/IntroArt.png</File>
-    <File>X:/My Drive/ICS4U/Obstacle Courses/Obstacle Courses/Content/player.png</File>
-    <File>X:/My Drive/ICS4U/Obstacle Courses/Obstacle Courses/Content/Triangle.webp</File>
-    <File>X:/My Drive/ICS4U/Obstacle Courses/Obstacle Courses/Content/Triangleflip.png</File>
-    <File>X:/My Drive/ICS4U/Obstacle Courses/Obstacle Courses/Content/yellow.jfif</File>
-    <File>X:/My Drive/ICS4U/Obstacle Courses/Obstacle Courses/Content/yellowsplat.png</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/0.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/1.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/10.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/100.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/11.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/12.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/13.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/14.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/15.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/16.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/17.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/18.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/19.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/2.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/20.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/21.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/22.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/23.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/24.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/25.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/26.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/27.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/28.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/29.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/3.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/30.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/31.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/32.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/33.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/34.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/35.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/36.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/37.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/38.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/39.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/4.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/40.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/41.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/42.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/43.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/44.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/45.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/46.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/47.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/48.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/49.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/5.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/50.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/51.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/52.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/53.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/54.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/55.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/56.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/57.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/58.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/59.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/6.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/60.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/61.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/62.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/63.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/64.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/65.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/66.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/67.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/68.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/69.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/7.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/70.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/71.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/72.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/73.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/74.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/75.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/76.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/77.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/78.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/79.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/8.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/80.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/81.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/82.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/83.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/84.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/85.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/86.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/87.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/88.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/89.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/9.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/90.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/91.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/92.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/93.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/94.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/95.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/96.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/97.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/98.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/99.gif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/black.jpg</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/blue.png</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/clickhere.png</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/dyingSound.mp3</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/Flag.png</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/gameMusic.mp3</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/GeometryEscape.png</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/howtoplaybutton.png</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/IntroArt.png</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/playAgain.png</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/player.png</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/Triangle.webp</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/Triangleflip.png</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/tutorialText.spritefont</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/winText.spritefont</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/yellow.jfif</File>
+    <File>C:/Users/rowen/source/repos/GeometryEscape/Obstacle Courses/Content/yellowsplat.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

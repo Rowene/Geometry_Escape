@@ -1,19 +1,20 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Mime;
 using System.Reflection.Emit;
 using System.Runtime.CompilerServices;
+using System.Xml.Linq;
 
 
 namespace Obstacle_Courses
 {
-    class Player
+    public class Player
     {
-
-        //Game1 class1 = new Game1();
 
         Texture2D _texture;
 
@@ -24,6 +25,8 @@ namespace Obstacle_Courses
         Rectangle _playerTop;
         Rectangle _playerLeft;
         Rectangle _playerRight;
+
+        SoundEffect _dyingSound;
 
         bool leftBorder = false;
         bool rightBorder = false;
@@ -36,11 +39,12 @@ namespace Obstacle_Courses
         bool onWall = false;
         bool hasJumped;
 
-        public Player(Texture2D texture, int x, int y)
+        public Player(Texture2D texture, int x, int y, SoundEffect dyingSound)
         {
             _texture = texture;
             _location = new Rectangle(x, y, 12, 12);
             hasJumped = false;
+            _dyingSound = dyingSound;
         }
 
         public Screen Update(GameTime gt, List<Rectangle> walls, List<Rectangle> spikes, List<Rectangle> yellows, List<Rectangle> teleports, Rectangle yellowSplat1, Rectangle yellowSplat2, Rectangle yellowSplat3)
@@ -50,7 +54,6 @@ namespace Obstacle_Courses
 
             onGround = false;
             onWall = false;
-            
 
             _velocity.X = 0f;
 
@@ -136,29 +139,33 @@ namespace Obstacle_Courses
             //deaths
             for (int i = 0; i < spikes.Count; i++)
             {
-                if (spikes[i].Intersects(_location)) { _location = _spawn; }
+                if (spikes[i].Intersects(_location)) { _location = _spawn; _dyingSound.Play(); }
             }
             for (int i = 0; i < yellows.Count; i++)
             {
-                if (yellows[i].Intersects(_location)) { _location = _spawn; }
+                if (yellows[i].Intersects(_location)) { _location = _spawn; _dyingSound.Play(); }
             }
 
-            if (yellowSplat1.Intersects(_location)) { _location = _spawn;}
-            if (yellowSplat2.Intersects(_location)) { _location = _spawn; }
-            if (yellowSplat3.Intersects(_location)) { _location = _spawn; }
+            if (yellowSplat1.Intersects(_location)) { _location = _spawn; _dyingSound.Play(); }
+            if (yellowSplat2.Intersects(_location)) { _location = _spawn; _dyingSound.Play(); }
+            if (yellowSplat3.Intersects(_location)) { _location = _spawn; _dyingSound.Play(); }
 
             //teleports
             for (int i = 0; i < teleports.Count; i += 2)
             {
-                if (_location.Intersects(teleports[i])) { _location.X = teleports[i + 1].X + teleports[i+1].Width/2; _location.Y = teleports[i+1].Y + teleports[i+1].Height/2; }
+                if (_location.Intersects(teleports[i])) 
+                { 
+                    _location.X = teleports[i + 1].X + teleports[i+1].Width/2; 
+                    _location.Y = teleports[i+1].Y + teleports[i+1].Height/2; 
+                }
             }
 
             //won
             if (_location.Intersects(new Rectangle(640, 140, 25, 25)))
             {
+                _location = _spawn;
                 return Screen.Won;
             }
-
 
             if (onWall & !onGround) { _velocity.Y = 1f; }
 
